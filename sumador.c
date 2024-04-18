@@ -3,16 +3,17 @@
 #define s scanf
 
 int main(void){
-    int num1, num2, num3,suma;
-    p("Numero: ");
+    int num1, num2,suma, resta, div, mult;
+    p("Numero 1: ");
     s("%d", &num1);
-    p("mas: ");
+    p("numero 2: ");
     s("%d", &num2);
-    p("mas: ");
-    s("%d", &num3);
-
-    suma = num1 + num2 + num3;
-
-    p("resultado: %d", suma);
+  
+    suma = num1 + num2;
+    resta = num1 - num2;
+    div = num1 / num2;
+    mult = num1 * num2;
+    
+    p("Suma: %d, resta %d, division %d, multiplicacion %d ", suma, resta, div, mult); 
     return 0;
 }
